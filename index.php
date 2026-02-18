@@ -8,18 +8,18 @@ include '../includes/db.php';
 include '../includes/header.php';
 ?>
 
-<div class="max-w-5xl mx-auto mt-10">
-  <div class="flex justify-between items-center mb-6">
-    <h1 class="text-3xl font-bold text-blue-400">Manage Posts</h1>
-    <a href="create.php" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white font-semibold">+ New Post</a>
-    <div class="flex justify-between items-center mb-6">
-  <h1 class="text-3xl font-bold text-blue-400">Manage Posts</h1>
-  <div>
-    <a href="logout.php" class="ml-4 text-gray-400 hover:text-red-400">Logout</a>
+<div class="max-w-5xl mx-auto mt-10 flex justify-start">
+  <!-- Left side card -->
+  <div class="bg-gray-800 p-6 rounded-lg shadow-md w-64">
+    <h1 class="text-xl font-bold text-blue-400 mb-4">Manage Posts</h1>
+    <a href="create.php" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white font-semibold block text-center">
+      + New Post
+    </a>
   </div>
 </div>
-  </div>
 
+<!-- Table of posts -->
+<div class="max-w-5xl mx-auto mt-6">
   <table class="w-full bg-gray-800 rounded-lg overflow-hidden">
     <tr class="bg-gray-700 text-left">
       <th class="p-3">Title</th>
@@ -41,6 +41,7 @@ include '../includes/header.php';
     <?php } ?>
   </table>
 </div>
+
 
 </body>
 </html>
